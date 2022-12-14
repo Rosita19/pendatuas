@@ -57,6 +57,7 @@ with Learn:
 #         st.dataframe(df)
    st.markdown("""Link Repository Github <a href="https://github.com/Rosita19/pendatuas">https://github.com/Rosita19/pendatuas</a> """, unsafe_allow_html=True)
    df = pd.read_csv("heart.csv")
+   df
 
 with Proses:
    st.title("""Preprosessing""")
