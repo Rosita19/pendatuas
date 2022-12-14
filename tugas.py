@@ -50,11 +50,12 @@ with Learn:
    st.title("""Upload Data""")
    st.write("Dataset yang digunakan adalah Heart Failure Prediction dataset yang diambil dari https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction")
    st.write("Total datanya adalah 918 dengan atribut 12")
-   uploaded_files = st.file_uploader("Upload file CSV", accept_multiple_files=True)
-   for uploaded_file in uploaded_files:
-        df = pd.read_csv(uploaded_file)
-        st.write("Nama File Anda = ", uploaded_file.name)
-        st.dataframe(df)
+#    uploaded_files = st.file_uploader("Upload file CSV", accept_multiple_files=True)
+#    for uploaded_file in uploaded_files:
+#         df = pd.read_csv(uploaded_file)
+#         st.write("Nama File Anda = ", uploaded_file.name)
+#         st.dataframe(df)
+   df = pd.read_csv("heart.csv")
 
 with Proses:
    st.title("""Preprosessing""")
