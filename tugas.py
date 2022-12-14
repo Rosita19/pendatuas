@@ -55,6 +55,10 @@ with Learn:
 #         df = pd.read_csv(uploaded_file)
 #         st.write("Nama File Anda = ", uploaded_file.name)
 #         st.dataframe(df)
+    st.markdown("""
+    Link Repository Github
+    <a href="https://github.com/Rosita19/pendatuas">https://github.com/Rosita19/pendatuas</a>
+    """, unsafe_allow_html=True)
    df = pd.read_csv("heart.csv")
 
 with Proses:
